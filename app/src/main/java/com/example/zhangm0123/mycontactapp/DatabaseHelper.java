@@ -47,7 +47,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         Log.d("MyContactApp", "Databasehelper: upgrading Databasehelper");
         db.execSQL(SQL_DELETE_ENTRIES);
-        db.delete(TABLE_NAME, null, null);
+       // db.delete(TABLE_NAME, null, null);
         onCreate(db);
 
     }
